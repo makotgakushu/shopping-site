@@ -109,6 +109,7 @@ header{
     max-width:100%;
     margin:0 auto;
 }
+
 //
 //全ページ共通部分　main>guide
 
@@ -227,6 +228,7 @@ footer{
     display:block;
     margin:7px 5px;
     text-align:center;
+    line-height:1.25rem;
 }
 
 .side-more{
@@ -234,8 +236,29 @@ footer{
     padding:10px 0;
 }
 
+//product-listのみ
+.buck-next{
+    display:flex;
+    justify-content:space-between;
+    width:99%;
+    height:35px;
+    margin:0 auto;
+    .buck,.next{flex: 0 0 110px}
+    margin-top:20px;
+}
 
+.buck,.next{
+    line-height:35px;
+    box-sizing:border-box;
+    background-color:#887f69;
+    color:#fff;
+    font-weight:bold;
+   
+}
 
+.buck p,.next p{
+     text-align:center;
+}
 //pan list,product-detailのみ
 
 .sp{
@@ -407,6 +430,10 @@ td,th{
 }
 
 //商品説明
+
+.exc-title-p{
+    line-height:1.25em;
+}
 .exc-title-top{
      border-bottom:1px solid #887f69;
      padding:20px 0 10px 0;
@@ -433,6 +460,10 @@ td,th{
   
     .sp{
         display:inline-block;
+    }
+    
+    .navi-s{
+        padding:0 2px;
     }
     
     .container{
@@ -464,6 +495,15 @@ td,th{
     .guide,.new-title,.popular-title,.recent{
     text-align:center;
     margin:20px 0;
+    }
+    
+    .page-top{
+        text-align:center;
+        margin:20px 0;
+    }    
+    
+    .side-menu-box{
+        width:98%;
     }
     
 //product-detailのみ    
@@ -505,10 +545,11 @@ td,th{
     
     .side-image{
         display:block;
-        width:50%;
+        width:47%;
     }
     .side-image-box{
         display:flex;
+        .side-image, .side-contents{flex: 0 0 47% ;}
         
     }
 //product-detail-page,list   
