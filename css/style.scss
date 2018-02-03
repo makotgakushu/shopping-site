@@ -28,6 +28,7 @@ header{
     display:flex;
     justify-content:space-between;
     padding:30px 0;
+    margin:auto;
 }
 .navi{
     padding-left:20px;
@@ -53,7 +54,7 @@ header{
 //main
 .main{
     width:74%;
-    margin:0 5px;
+    margin:0 auto;
 }
 
 .index-main{
@@ -63,6 +64,7 @@ header{
 //side
 .side{
     width:25%;
+    margin:0 auto;
 }
 
 
@@ -542,7 +544,10 @@ td,th{
         width:100%;
         
     }
-    
+    .side-menu-box{
+    margin:0 auto;
+    margin-bottom:10px;
+    }
     .side-image{
         display:block;
         width:47%;
