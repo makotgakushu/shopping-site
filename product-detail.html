@@ -30,17 +30,16 @@
                 
                 <div class="header-right">
                     
-                    <img src="./images/top/menu_login.png" alt=""  class="pc">
-                    <img src="./images/top/menu_cart.png" alt=""  class="pc">
-                    <img src="./images/top/menu_mypage.png" alt=""  class="pc">
-                    <img src="./images/top/menu_guide.png" alt=""  class="pc">
+                    <img src="./images/top/menu_login.png" alt=""  class="navi pc">
+                    <img src="./images/top/menu_cart.png" alt=""  class="navi pc">
+                    <img src="./images/top/menu_mypage.png" alt=""  class="navi pc">
+                    <img src="./images/top/menu_guide.png" alt=""  class="navi pc">
                     
-                    <img src="./images/top/facebook.png" alt="" class="pc">
-                    <img src="./images/top_sp/fb.png" alt="" srcset="./images/top_sp/fb@2x.png 2x" class="sp">
+                    <img src="./images/top/facebook.png" alt="" class="navi pc">
+                    <img src="./images/top_sp/fb.png" alt="" srcset="./images/top_sp/fb@2x.png 2x" class="navi-s sp">
                     
-                    <img src="./images/top/insta.png" alt="" class="pc">
-                    <img src="./images/top_sp/insta.png" alt="" srcset="./images/top_sp/insta@2x.png 2x" class="sp">
-                    
+                    <img src="./images/top/insta.png" alt="" class="navi-s pc">
+                    <img src="./images/top_sp/insta.png" alt="" srcset="./images/top_sp/insta@2x.png 2x" class="navi-s sp">
                     <img src="./images/top_sp/menu_icon.png"  alt="" srcset="./images/top_sp/menu_icon@2x.png 2x"  id="menu">
                     
                     <ul class="sp_menu_toggle">
@@ -57,18 +56,25 @@
             
                 <!--main-->
                  <div class="main">
+                     
+                    <div class="pan">
+                    <p>HOME/カテゴリ一覧/商品名</p>
+                    </div>
+                    
                    <div class="main-1">
                     
-                    <div class="pan">
-                    <p>HOME/カテゴリ一覧</p>
-                    </div>
                     
                      
                      <!--product-->
-                     
-                    <div class="pro-name">
-                    <p>商品名が入ります</p>
+                    <div class="pro"> 
+                        <div class="pro-name">
+                        <p>商品名が入ります</p>
+                        </div>
+                        <div class="pro-number">
+                        <p>fa001-91</p>
+                        </div>
                     </div>
+                    
                     <div class="main-2">
                         
                         <div id="display-image">
@@ -110,7 +116,7 @@
                     </div>
                     
                     <div class="main-3">
-                         <img src="./images/products/title_color.png"  alt="" class="image">
+                         <img src="./images/products/title_color.png"  alt="" class="image color-size">
                          <table>
                              <tr>
                                  <th class="table-color"></th>
@@ -119,15 +125,15 @@
                              </tr>
                              <tr>
                                  <td class="table-color">サイズ</td>
-                                 <td></td>
-                                 <td></td>
+                                 <td><label><input type="checkbox" name="pro-color" value=""></label></td>
+                                 <td><label><input type="checkbox" name="pro-color" value=""></label></td>
                              </tr>
                          </table>
                          <div>
                              <div class="purchase-container">
                                  <div class="pricequantity">
                                      <div class="price">   
-                                         <img src="./images/products/title_price.png" alt="" >
+                                         <img src="./images/products/title_price.png" alt="" class="price-image">
                                          <p class="price-a">¥1,000</p><p class="price-b">(tax in)</p>
                                      </div>
                                      <div class="quantity">
@@ -166,11 +172,11 @@
                                  </P>
                          <table>
                          <tr>
-                             <td class="table-color">カラー</td>
+                             <td class="table-color td-2">カラー</td>
                              <td>説明文が入ります説明文が入ります説明文が入ります</td>
                          </tr>
                          <tr>
-                             <td class="table-color">サイズ</td>
+                             <td class="table-color td-2">サイズ</td>
                              <td>説明文が入ります説明文が入ります説明文が入ります</td>
                          </tr>
                          </table>
@@ -206,37 +212,37 @@
                     <div class="guide-boxes">
                         <div class="guide-box">
                             
-                            <h3>お届けについて</h3>
+                            <h3 class="guide-box-title">お届けについて</h3>
                             
                             <img src="./images/top/otodoke_banner.png" alt=""  class="image">
                             
                             <div>
-                            <p>■ ○○運送</p>
+                            <p class="guide-box-title">■ ○○運送</p>
                             <p>送料○○円</p>
                             </div>
                             
                             <div>
-                            <p>■ ゆうパック</p>
+                            <p class="guide-box-title">■ ゆうパック</p>
                             <p>ポスト投かんになります</p>
                             </div>
                             
                         </div>
                         
                         <div class="guide-box">
-                            <h3>決済について</h3>
+                            <h3 class="guide-box-title">決済について</h3>
                             
                             <div>
-                            <p>■ カード決済</p>
+                            <p class="guide-box-title">■ カード決済</p>
                             <img src="./images/top/cards.png" alt=""  class="image">
                             </div>
                             
                             <div>
-                            <p>■ 代金引換</p>
+                            <p class="guide-box-title">■ 代金引換</p>
                             <p>代金引換には代引き手数料が別途かかります</p>
                             </div>
                             
                             <div>
-                            <p>■ 銀行振り込み</p>
+                            <p class="guide-box-title">■ 銀行振り込み</p>
                             <p>お振込手数料お客様負担</p>
                             <p>ご入金確認後の発送となります</p>
                             </div>
@@ -250,7 +256,6 @@
                         <img src="./images/top/itemserch.png" alt=""  id="item-serch-icon">
                         <div class="item-search-box">
                             <input type="text" class="serch-input" placeholder="Search...">
-                        <!--<img src="./images/top/search_icon.png" id="item-serch-box-icon">-->
                         </div>
                        
                     </div>

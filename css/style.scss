@@ -29,7 +29,13 @@ header{
     justify-content:space-between;
     padding:30px 0;
 }
+.navi{
+    padding-left:20px;
+}
 
+.navi-s{
+    padding-left:10px;
+}
 #menu {
       display: none;
 }
@@ -41,11 +47,17 @@ header{
 .contents{
     display:flex;//main, sideを横並び
     width:98%;
+    margin:auto;
 }
 
 //main
 .main{
     width:74%;
+    margin:0 5px;
+}
+
+.index-main{
+    margin-top:-14px;
 }
 
 //side
@@ -83,11 +95,13 @@ header{
     background-color:#fff;
     padding:6px;
     margin:5px 5px;
+   
 }
 
 .box p{
     display:block;
     margin:7px 5px;
+    line-height:1.25em;
 }
 
 .box img{
@@ -112,10 +126,16 @@ header{
     font-weight:bold;
     margin:10px;
 }
+
+.guide-box-title{
+    color:#887f69;
+    font-weight:bold;
+}
 .guide-box p{
     display:block;
     margin:10px 5px;
 }
+
 
 //page-top
 .page-top{
@@ -145,12 +165,11 @@ footer{
 //side
 .side-menu-box{
     width:90%;
-    margin:0 auto;
     background-color:#fff;
     margin:0 10px 10px 10px;
 }
 .side-menu-top{
-    padding:12px 10px;
+    padding:16px 10px;
     width:100%;
     box-sizing:border-box;
     background-color:#887f69;
@@ -167,8 +186,6 @@ footer{
   height:30px;
   width:90%;
   margin-left:10px;
-  background-color:#f9f8f6;
-    
 }
 
 #item-serch-icon{
@@ -181,18 +198,22 @@ footer{
 }
 
 .serch-input{
-    width:100%;
+    width:95%;
     background-color:#f9f8f6;
     background-image:url("../images/top/search_icon.png");
     background-repeat: no-repeat;
     background-position:right;
+    font-style:oblique;
+    font-weight:bold;
+    font-size:12px;
+    height:20px;
   
 }
 
 
 .category-name{
-    padding:10px;
-    border-top:solid 0.1px;
+    padding:16px 10px;
+    border-top:solid 0.1px #f9f8f6 ;
     display:flex;
     justify-content:space-between;
 }
@@ -200,6 +221,7 @@ footer{
 
 .side-image{
     text-align:center;
+    margin:7px;
 }
 .side-image-box p{
     display:block;
@@ -221,24 +243,19 @@ footer{
 }
 
 .pan{
-   
-}
-.pan{
     width:100%;
     height:35px;
     background-color:#e2ddd4;
     background-image:url("../images/list/home_icon.png");
     background-repeat: no-repeat;
     background-position: 10px 10px;
-    margin-bottom:7px;
+    margin-bottom:10px;
 }
 
 .pan p{
     color:#887f69;
     margin-left:30px;
     line-height:35px
-    
-    
 }
 
 //product-detailのみ
@@ -247,18 +264,30 @@ footer{
     background-color:#fff;
 }
 
-.pro-name{
-    width:90%;
-    margin:auto;
+.pro{
+    display:flex;
+    justify-content:space-between;
+    width:84%;
     height:70px;
+    margin:0 auto;
+    .pro-name,.pro-number{flex: 0 0 50%}
+    
+}
+.pro-name{
     line-height:70px;
     font-weight:bold;
+}
+
+.pro-number{
+    text-align:right;
+    line-height:70px;
+    color:#e2ddd4;
 }
 
 
 //big-imageとulの親要素
 .main-2{
-    width:90%;
+    width:84%;
     margin:auto;
     display:flex;//big-imageとulを横並び
     padding:10px 0;
@@ -273,16 +302,19 @@ footer{
 }
 
 #list-image{
-    width:28%;
+    width:30%;
     background-color:#fff;
     display:flex;//li横並び
     flex-wrap:wrap;//li折り返し
     align-content: flex-start;//li上詰め
+    margin-left:5px;
+    
 }
 
 li{
-    width:45%;
-    padding:5px 5px 0 0;
+    width:47%;
+    padding-bottom:5px;
+    margin-left:5px;
 }
 
 .image-gray{
@@ -292,17 +324,19 @@ li{
 
 //table
 .main-3{
-    width:90%;
+    width:84%;
     margin:0 auto 15px;
     padding:10px 0;
     border-top:solid 1px #e2ddd4;
     border-bottom:solid 1px #e2ddd4;
 }
+.color-size{
+    margin:10px 0;
+}
 table{
     width:100%;
     border:1px solid #e2ddd4;
-    color:#e2ddd4;
-    font-weight:bold;
+    color:#887f69;
     border-collapes:collapse;
     margin:15px auto;
 }
@@ -312,6 +346,7 @@ td,th{
      text-align:center;
      line-height:40px;
 }
+.td-2{ padding:0 40px;}
 
 .table-color{
     background-color:#f9f8f6;
@@ -346,7 +381,13 @@ td,th{
    margin:0 10px 0 30px;
    font-style:oblique;
 }
-
+.price-image{
+    position: relative;
+    top: -3px;
+}
+.quantity-a{
+    line-height:45px;
+}
 .quantity-b{
     margin-left:20px;
 }
@@ -358,18 +399,25 @@ td,th{
 .quantity{
     border-bottom:1px solid #e2ddd4;
     border-top:1px solid #e2ddd4;
-    padding:20px 0;
+    padding:10px 0;
     display:flex;
+}
+.quantity input{
+    height:35px;
 }
 
 //商品説明
 .exc-title-top{
-     border-bottom:5px solid #e2ddd4;
-     padding:20px 0;
-     margin:20px 0;
+     border-bottom:1px solid #887f69;
+     padding:20px 0 10px 0;
+     margin:25px 0;
+     color:#887f69;
+     font-weight:bold;
 }
 .exc-title{
      margin-bottom:20px;
+     color:#887f69;
+     font-weight:bold;
 }
 
 .title{
